@@ -1,0 +1,21 @@
+{
+    "portsAttributes": {
+        "3000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "app/scripts/core/gameCoordinator.js"
+            ]
+        }
+    },
+    "onCreateCommand": "npm install",
+    "postAttachCommand": {
+        "server": "npm run serve",
+        "watcher": "npm run watch"
+    },
+    "hostRequirements": {"cpus": 4}
+}
